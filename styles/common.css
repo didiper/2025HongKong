@@ -1,0 +1,108 @@
+/* 針對 body 和基本樣式 */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+/* 行程表格的樣式 */
+table {
+  width: 95%;
+  max-width: 1200px; /* 設置最大寬度 */
+  border-collapse: collapse;
+  margin: 30px auto; /* 表格居中，並增加上下間距 */
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
+table th {
+  background-color: #f7f7f7;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* 響應式設計：小屏幕調整表格 */
+@media screen and (max-width: 768px) {
+  table {
+    width: 100%; /* 適應小屏幕 */
+    font-size: 14px; /* 減小字體 */
+  }
+  table th,
+  table td {
+    padding: 10px;
+  }
+}
+
+/* 回到頂部按鈕 */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease; /* 平滑過渡效果 */
+}
+#back-to-top:hover {
+  background-color: #0056b3;
+}
+
+/* 回首頁按鈕 */
+#home-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease; /* 平滑過渡效果 */
+}
+#home-button:hover {
+  background-color: #218838;
+}
+
+/* 響應式設計：小屏幕調整按鈕大小 */
+@media screen and (max-width: 768px) {
+  #back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  #home-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
