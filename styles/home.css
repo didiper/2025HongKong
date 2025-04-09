@@ -1,0 +1,116 @@
+/* 基本樣式 */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* 頁面容器：控制寬度和居中 */
+.container {
+  max-width: 1200px; /* 最大寬度 */
+  margin: 0 auto; /* 水平居中 */
+  padding: 20px; /* 四周留白 */
+}
+
+/* 標頭樣式 */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* 導覽列樣式 */
+nav {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* 小螢幕時換行 */
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 區塊樣式 */
+section {
+  margin: 20px 0;
+  text-align: center; /* 文字置中 */
+}
+
+section h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none; /* 移除預設符號 */
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+  body {
+    font-size: 90%; /* 縮小整體字體 */
+  }
+
+  nav {
+    flex-direction: column; /* 導覽列垂直排列 */
+    gap: 5px;
+  }
+
+  header h1 {
+    font-size: 2rem; /* 標題縮小 */
+  }
+
+  header p {
+    font-size: 1rem; /* 描述縮小 */
+  }
+
+  ul li {
+    font-size: 0.9rem; /* 清單字體縮小 */
+  }
+}
